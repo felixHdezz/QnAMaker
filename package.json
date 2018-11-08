@@ -1,0 +1,11 @@
+{
+  "name": "qnamakerservice",
+  "version": "1.0.0",
+  "description": "Chatbot con QnAMaker ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Felix Hernanadez Hernandez",
+  "license": "ISC"
+}
