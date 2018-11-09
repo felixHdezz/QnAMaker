@@ -173,8 +173,6 @@ namespace Microsoft.Bot.Sample.QnABot
 			/* connection to date base */
 			DbConnection _conn = new DbConnection();
 
-			
-
 			SqlDataReader _dReader = _conn.executeQuery(queryString);
 			while (_dReader.Read())
 			{
@@ -189,7 +187,6 @@ namespace Microsoft.Bot.Sample.QnABot
 
 			//close current connection
 			DbConnection._conn.Close();
-
 			return list_endPoint;
 		}
 

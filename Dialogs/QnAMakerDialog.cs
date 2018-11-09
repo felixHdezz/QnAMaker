@@ -29,9 +29,6 @@
 // LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-//
-
-
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -50,14 +47,18 @@ namespace Microsoft.Bot.Sample.QnABot
     public class QnAMakerDialog : IDialog<object>
     {
         private QnAMakerResults qnaMakerResults;
+        private string _strTest = string.Empty;
 
         public async Task StartAsync(IDialogContext context)
         {
+            _strTest = "Este es una prueba de asignacion de valor al variable";
             context.Wait(MessageReceivedAsync);
         }
 
         public async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
         {
+            var variable = _strTest;
+
             var message = await argument;
 
             var qnaAuthKey = SqlServices.qnaAuthKey;
