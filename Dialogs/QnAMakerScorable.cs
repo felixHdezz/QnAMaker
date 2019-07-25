@@ -70,7 +70,7 @@ namespace Microsoft.Bot.Sample.QnABot
                     {
                         qnaMakerResults.Answers.First().Answer = qnaMakerResults.ServiceCfg.DefaultMessage;
                     }
-
+                    //
                     return qnaMakerResults.Answers.First().Score >= qnaMakerResults.ServiceCfg.ScoreThreshold ? qnaMakerResults.Answers.First() : null;
                 }
             }

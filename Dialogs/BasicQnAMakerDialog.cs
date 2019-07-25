@@ -34,6 +34,7 @@ namespace Microsoft.Bot.Sample.QnABot
              *  await the result. */
             var message = await result;
             
+
             var qnaAuthKey = SqlServices.qnaAuthKey;
             var qnaKBId = SqlServices.qnaKBId;
             var endpointHostName = SqlServices.endpointHostName;

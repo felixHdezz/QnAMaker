@@ -73,6 +73,7 @@ namespace Microsoft.Bot.Sample.QnABot
 
         public bool HasScore(IActivity item, object state)
         {
+            //
             return state is QnAMakerResult;
         }
 
