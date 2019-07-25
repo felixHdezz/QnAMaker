@@ -51,7 +51,9 @@ namespace Microsoft.Bot.Sample.QnABot
 
         public async Task StartAsync(IDialogContext context)
         {
-            _strTest = "Este es una prueba de asignacion de valor al variable";
+            // Aquí se configurara para obtener parametros externos
+
+
             context.Wait(MessageReceivedAsync);
         }
 
